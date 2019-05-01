@@ -1,0 +1,68 @@
+
+.splash-top-nav {
+    box-sizing: border-box;
+    right: 0;
+    left: 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 80px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    float: left;
+    width: auto;
+    color: #D9DADC;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 40px;
+}
+
+.nav-logo {
+    padding-left: 150px;
+}
+
+.nav-right {
+    padding-right: 50px;
+}
+
+.divider {
+    font-weight: 100;
+}
+
+.login-text, .signup-text {
+    font-weight: 700;
+}
+
+.link {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a:hover {
+    color: #1ED760;
+}
+
+a:visited {
+    color: rgb(156, 172, 204);
+}
+
+.main-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 500px;
+    width: 100vw;
+}
+
+.splash {
+    width: 100vw;
+}

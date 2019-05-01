@@ -5,20 +5,21 @@ class Api::UsersController < ApplicationController
 
         if @user.save
             login(@user)
+            render "api/users/show"
         else 
-
+            render json: @user.errors
         end
     end
 
-    def show
-        @user = User.find(params[:id])
+    # def show
+    #     @user = User.find(params[:id])
         
-        if @user
+    #     if @user
 
-        else 
+    #     else 
 
-        end
-    end
+    #     end
+    # end
 
     private
     def user_params

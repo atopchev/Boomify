@@ -1,0 +1,14 @@
+<% if logged_in? %>
+  <script id="bootstrap-current-user" type="text/javascript">
+  	window.currentUser = <%= render("api/users/user.json.jbuilder",
+  		user: current_user).html_safe %>
+  </script>
+<% end %>
+
+<script>
+  window.images = {
+    splash_bubbles: "<%= asset_path("spash_page_bubbles.jpg") %>"
+  }
+</script>
+
+<div id="root"><marquee> Redux is broken, yo!</marquee></div>
