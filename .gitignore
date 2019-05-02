@@ -1,6 +1,13 @@
-node_modules/
-bundle.js
+!/tmp/.keep
+
+/node_modules/
+/bundle.js*
 bundle.js.map
+
 .byebug_history
 .DS_Store
+
 npm-debug.log
+/config/master.key
+/storage/*
+/yarn-error.log/public/assets
