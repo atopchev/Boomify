@@ -18,7 +18,6 @@
 
 span {
     float: left;
-    width: auto;
     color: #D9DADC;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -61,8 +60,38 @@ a:visited {
     right: 0;
     height: 500px;
     width: 100vw;
+    z-index: -1;
 }
 
 .splash {
     width: 100vw;
+}
+
+.get-free-link {
+    position: absolute;
+    top: 450px;
+    left: 620px;
+    z-index: 200;
+    width: 250px;
+    height: 50px;
+    padding-right: 0;
+    border-radius: 20%;
+}
+
+.button-link {
+    color: #FFF;
+    width: 250px;
+    height: 50px;
+    background-color:#1DB954;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+    letter-spacing: 2px;
+    transition-duration: .3s;
+}
+
+.button-link:visited {
+    color: white;
 }

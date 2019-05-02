@@ -21,7 +21,9 @@ const Splash = ({ currentUser, logout }) => {
 			</div>
 			<div className="main-content">
 				<img className="splash" src={window.images.splash_bubbles}></img>
-				{/* <Link className="get-free-link" to="/signup">GET BOOMBIFY FREE</Link> */}
+				<span className="get-free-link">
+					<Link className="button-link" to="/signup">GET BOOMBOX FREE</Link>
+				</span>
 			</div>
 		</nav>
 
