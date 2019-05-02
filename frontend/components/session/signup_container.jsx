@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+import React from 'react';
 import { connect } from 'react-redux';
 import SessionForm from './session_form';
-import { logout } from '../../actions/session_actions';
+import { signup } from '../../actions/session_actions';
 
 
 const msp = (state) => ({
@@ -14,7 +16,7 @@ const msp = (state) => ({
 });
 
 const mdp = dispatch => ({
-    action: () => dispatch(logout())
+    action: (user) => dispatch(signup(user))
 });
 
 export default connect(msp, mdp)(SessionForm);

@@ -9,9 +9,9 @@ import SignUpContainer from './session/signup_container';
 const App = () => (
     <div>
         <Switch> 
-            <Route path="/" component={SplashContainer} />
             <AuthRoute exact path="/login" component={LogInContainer} /> 
             <AuthRoute exact path="/signup" component={SignUpContainer} /> 
+            <Route path="/" component={SplashContainer} />
         </Switch>
     </div>
 )

@@ -32,7 +32,7 @@ gem 'jquery-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'faker'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -51,7 +51,6 @@ group :development do
   gem 'annotate'
   gem 'better_errors'
   gem 'binding_of_callers'
-  gem 'faker'
 end
 
 group :test do

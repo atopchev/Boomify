@@ -29,7 +29,7 @@ export const logout = () => dispatch => {
         .then(() => dispatch(logoutCurrentUser()))
 };
 
-export const signup = user => dispatch => {
+export const signup = (user) => dispatch => {
     SessionAPIUtils.signup(user)
-        .then(user => dispatch(receiveCurrentUser(user)))
+        .then((user) => dispatch(receiveCurrentUser(user)))
 };
