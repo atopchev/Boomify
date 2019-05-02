@@ -46,7 +46,7 @@ span {
     line-height: 1.5;
 }
 
-a:hover {
+.signup-text a.link:hover {
     color: #1ED760;
 }
 
@@ -70,9 +70,9 @@ a:visited {
 .get-free-link {
     position: absolute;
     top: 450px;
-    left: 620px;
+    left: 587px;
     z-index: 200;
-    width: 250px;
+    width: 290px;
     height: 50px;
     padding-right: 0;
     border-radius: 20%;
