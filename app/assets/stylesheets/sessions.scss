@@ -1,4 +1,127 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.body {
+    background: #FFF;
+    color: #222326;
+    min-width: 320px;
+}
 
+.header {
+    border-bottom: 1px solid #d9dadc;
+    padding: 25px 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    height: 107px;
+}
+
+.header-logo {
+    width: 65px;
+    height: 65px;
+    display: block;
+}
+
+#title-0 {
+    padding-top: 5px;
+    letter-spacing: -1px;
+    margin-left: 9px;
+    display: flex;
+    justify-content: left;
+    font-weight: 400;
+    font-size: 38px;
+    height: 40px;
+    font-weight: 700;
+    color:#222326;
+}
+
+.form-content {
+    font-family: Circular,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222326;
+    background-color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+.demo-login {
+    color: #FFF;
+    background-color: #3B5998;
+    margin-bottom: 14px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    border-radius: 500px;
+    padding: 16px 48px 18px; 
+    letter-spacing: 2px;
+    min-width: 160px;
+    display: block;
+    cursor: pointer;
+}
+
+.-or- {
+    width: 400px;
+    text-align: center;
+    border-bottom: 1px solid #d9dadc;
+    line-height: 0.1em;
+    margin: 10px 0 0px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+      margin-left: auto;
+    margin-right: auto;
+}
+.or {
+    background-color: #fff;
+    padding: 0 13px;
+    font-weight: bold;
+    display: block;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    font-size: 14px;
+}
+
+.subtext {
+    text-align: center;
+    color: #1c1c1f;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    padding-top: 10px;
+}
+
+.i {
+    cursor: text;
+    height: 48px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    width: 500px;;
+    background-color: #FFF;
+    border: 1px solid #dfe0e6;
+    color: #1c1c1f;
+    font-size: .9375em;
+    line-height: normal;
+    padding: 12px 12px;
+    margin: 8px 0;
+}
+
+.sub-btn {
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    background-color: #1DB954;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+    letter-spacing: 2px;
+    min-width: 160px;
+    display: block;
+    // width: 100%;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+}

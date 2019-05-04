@@ -2,14 +2,14 @@ import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import Splash from './splash';
 
-const msp = ({ session, entities: { users } }) => {
+const msp = ({ session }) => {
   return {
-    currentUser: users[session.id]
+    currentUser: session
   };
 };
 
 const mdp = dispatch => ({
-  logout: () => dispatch(logout())
+  action: () => dispatch(logout())
 });
 
 export default connect( msp, mdp)(Splash);

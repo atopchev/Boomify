@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Splash = ({ currentUser, logout }) => {
+const Splash = (props) => {
   const loggedOutSplash = () => (
 	<>
 		<nav className="splash-top-nav">
@@ -33,12 +33,12 @@ const Splash = ({ currentUser, logout }) => {
 
   const loggedInSplash = () => (
 	<div>
-	  <h2>Welcome back, {currentUser.username}.</h2>
-	  <button onClick={logout}>Log Out</button>
+	  <h2>Welcome back, {props.currentUser.username}.</h2>
+	  <button onClick={props.action}>Log Out</button>
 	</div>
-  );
+	);
 
-  return (currentUser) 
+  return (props.currentUser) 
 			? loggedInSplash() 
 			: loggedOutSplash();
 };

@@ -20,6 +20,10 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_token
 
+    has_many :playlists, 
+        foreign_key: :user_id, 
+        class_name: 'Playlists'
+
     def is_password?(password)
         BCrypt::Password.new(self.password_digest).is_password?(password)
     end

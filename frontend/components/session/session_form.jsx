@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
     
@@ -8,11 +8,18 @@ class SessionForm extends React.Component {
         this.state = this.props.user;
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
     }
 
     handleSubmit(e){
         e.preventDefault();
-        return this.props.action(this.state);
+        return this.props.action(this.state).then(() => this.props.history.push("/browse/featured"));
+    }
+
+    handleDemoSubmit(e){
+        e.preventDefault();
+        return this.props.login( { username: "ott", password: "password" })
+            .then(() => this.props.history.push("/browse/featured"));
     }
 
     update(field) {
@@ -32,16 +39,15 @@ class SessionForm extends React.Component {
     }
 
     render() {
-
         let email;
         if (this.props.formType === "Sign Up") {
             email = 
                 <>
-                    <label> email:
-                        <input type="text" value={this.state.email} onChange={this.update("email")} />
+                    <label>
+                        <input className="i" placeholder="email" type="text" value={this.state.email} onChange={this.update("email")} />
                     </label>
-                    <label> confirm email:
-                        <input type="text"/>
+                    <label> 
+                        <input className="i" placeholder="confirm email" type="text"/>
                     </label> 
                 </>
         };
@@ -71,39 +77,43 @@ class SessionForm extends React.Component {
 
         return(
             <div className="body">
-                <div className="header-logo">BOOMIFY</div>
+                <div className="">
+                    <Link to="/" className="session-to-splash" >
+                        <header className="header">
+                            <img className="header-logo" src={window.images.logo}/>
+                            <p id="title-0">Boombox</p>
+                        </header>
+                    </Link>
+                </div>
                 <div className="main-section">
                     <div className="form-content">
-
                         <div className="demo-login-button">
-                            <button>DEMO LOG IN</button>
+                            <button 
+                                className="demo-login"
+                                onClick={this.handleDemoSubmit}>DEMO LOG IN</button>
                         </div>
-
                         <div className="-or-">
-                            --------- or ---------
+                            <p className="or">or</p>
                         </div>
 
                         <div className="subtext">
                             sign up with your email address
                         </div>
-
                         <form onSubmit={this.handleSubmit}>
                             {email}
-                            <label> Username:
-                                <input type="text" value={this.state.username} onChange={this.update("username")} />
+                            <label>
+                                <input className="i" placeholder="Username" type="text" value={this.state.username} onChange={this.update("username")} />
                             </label>
-                            <label> Password:
-                                <input type="password" value={this.state.password} onChange={this.update("password")} />
+                            <label> 
+                                <input className="i" placeholder="Password" type="password" value={this.state.password} onChange={this.update("password")} />
                             </label>
                             <div className="row-submit">
                                 <br></br>
                                 {signupExtras}
-                                <input type="submit" value={this.props.formType}/>
+                                <input className="sub-btn" type="submit" value={this.props.formType}/>
                             </div>
                         </form>
-
-                        {loginExtra}
-                        
+                        {loginExtra}  
                     </div>
                 </div>
             </div>
