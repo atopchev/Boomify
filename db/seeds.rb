@@ -1,15 +1,18 @@
-# User.destroy_all
+User.destroy_all
+Artist.destroy_all
+Album.destroy_all
+Song.destroy_all
+Playlist.destroy_all
 
 10.times do |i|
     User.create(username: Faker::Ancient.god + "#{i}", email: Faker::Internet.email, password: "password")
 end
 
-artists
-
-songs
-albums
-artists
-playlists
+u1 = User.new(username: "Johnny John", email: "johnny@gmail.com", password: "password")
+u5 = User.new(username: "Tanya", email: "tanya@gmail.com", password: "password")
+u4 = User.new(username: "Peter Piper", email: "peter@gmail.com", password: "password")
+u3 = User.new(username: "Luna Lovegood", email: "lily@gmail.com", password: "password")
+u2 = User.new(username: "Papa John", email: "jim@gmail.com", password: "password")
 
 a1 = Artist.create!(name: "Ms. Lauryn Hill")
 a2 = Artist.create!(name: "Mac Miller")
@@ -21,13 +24,65 @@ a8 = Artist.create!(name: "Glass Animals")
 a9 = Artist.create!(name: "Modest Mouse")
 
 al1 = Album.create!(name: "Scorpion " , artist_id: a4.id, year: 2018 )
-al2 = Album.create!(name: "Diplomatic Immunity" , artist_id: a4.id , year: 2018 )
-al3 = Album.create!(name: "The Miseducation of Lauryn Hill", artist_id: a1.id , year: 1998 )
-al4 = Album.create!(name: "What's the Use?", artist_id: a2.id , year: 2018 )
-al5 = Album.create!(name: "The Divine Feminine" , artist_id: a2.id, year: 2016 )
-al6 = Album.create!(name: "Real Love Baby", artist_id: a3.id , year: 2016)
-al7 = Album.create!(name: "Hang", artist_id: a5.id , year: 2017)
-al8 = Album.create!(name: "Notion", artist_id: a7.id , year: 2016)
-al9 = Album.create!(name: "Glass Animals", a8.id, year: 2013)
-al10 = Album.create!(name: "We Were Dead Before The Ship Even Sank", artist_id: a9.id, year: 2007)
+al2 = Album.create!(name: "The Miseducation of Lauryn Hill", artist_id: a1.id , year: 1998 )
+al3 = Album.create!(name: "What's the Use?", artist_id: a2.id , year: 2018 )
+al4 = Album.create!(name: "The Divine Feminine" , artist_id: a2.id, year: 2016 )
+al5 = Album.create!(name: "Real Love Baby", artist_id: a3.id , year: 2016)
+al6 = Album.create!(name: "Hang", artist_id: a5.id , year: 2017)
+al7 = Album.create!(name: "Notion", artist_id: a7.id , year: 2016)
+al8 = Album.create!(name: "Glass Animals", a8.id, year: 2013)
+al9 = Album.create!(name: "We Were Dead Before The Ship Even Sank", artist_id: a9.id, year: 2007)
 
+
+s1 = Song.create!(title: "Survival",artist_id: a4.id, album_id: a1.id, length: "2:16" )
+s2 = Song.create!(title: "Nonstop",artist_id: a4.id, album_id: a1.id, length: "3:58" )
+s3 = Song.create!(title: "Elevate",artist_id: a4.id, album_id: a1.id, length: "3:04" )
+s4 = Song.create!(title: "Emotionless",artist_id: a4.id, album_id: a1.id, length: "5:02" )
+s5 = Song.create!(title: "God's Plan",artist_id: a4.id, album_id: a1.id, length: "3:18" )
+s6 = Song.create!(title: "I'm Upset",artist_id: a4.id, album_id: a1.id, length: "3:34" )
+s7 = Song.create!(title: "8 Out Of 10",artist_id: a4.id, album_id: a1.id, length: "3:15" )
+s8 = Song.create!(title: "Mob Ties",artist_id: a4.id, album_id: a1.id, length: "3:25" )
+s9 = Song.create!(title: "Can't Take A Joke",artist_id: a4.id, album_id: a1.id, length: "2:43" )
+s10 = Song.create!(title: "Sandra's Rose",artist_id: a4.id, album_id: a1.id, length: "3:36" )
+s11 = Song.create!(title: "Talk Up (feat. Jay-Z)",artist_id: a4.id, album_id: a1.id, length: "3:43" )
+s12 = Song.create!(title: "Is There More",artist_id: a4.id, album_id: a1.id, length: "3:46" )
+s13 = Song.create!(title: "Peak",artist_id: a4.id, album_id: a1.id, length: "3:26" )
+s14 = Song.create!(title: "Summer Games",artist_id: a4.id, album_id: a1.id,, length: "4:07" )
+s15 = Song.create!(title: "Jaded",artist_id: a4.id, album_id: a1.id, length: "4:22" )
+s16 = Song.create!(title: "Nice For What",artist_id: a4.id, album_id: a1.id, length: "3:30" )
+s17 = Song.create!(title: "Finesse",artist_id: a4.id, album_id: a1.id,, length: "3:02" )
+s18 = Song.create!(title: "Ratchet Happy Birthday",artist_id: a4.id, album_id: a1.id, length: "3:27" )
+s19 = Song.create!(title: "That's How You Feel",artist_id: a4.id, album_id: a1.id, length: "2:37" )
+s20 = Song.create!(title: "Blue Tint",artist_id: a4.id, album_id: a1.id, length: "2:42" )
+s21 = Song.create!(title: "In My Feelings",artist_id: a4.id, album_id: a1.id, length: "3:37" )
+s22 = Song.create!(title: "Don't Matter To Me (with Michael Jackson)",artist_id: a4.id, album_id: a1.id,, length: "4:05" )
+s23 = Song.create!(title: "After Dark (feat. Static Major & Ty Dolla $ign)",artist_id: a4.id, album_id: a1.id, length: "4:49" )
+s24 = Song.create!(title: "Final Fantasy",artist_id: a4.id, album_id: a1.id, length: "3:39" )
+s25 = Song.create!(title: "March 14",artist_id: a4.id, album_id: a1.id, length: "5:09" )
+
+lh1  = Song.create!(title: "Intro" , album_id: a2.id , artist_id: a1.id , length: "0:47" )
+lh2  = Song.create!(title: "Lost Ones" , album_id: a2.id , artist_id: a1.id , length: "5:33" )
+lh3  = Song.create!(title: "Ex-Factor" , album_id: a2.id , artist_id: a1.id , length: "5:26" )
+lh4  = Song.create!(title: "To Zion" , album_id: a2.id , artist_id: a1.id , length: "6:09" )
+lh5  = Song.create!(title: "Doo Wop (That Thing)" , album_id: a2.id , artist_id: a1.id , length: "5:20")
+lh6  = Song.create!(title: "Superstar" , album_id: a2.id , artist_id: a1.id , length: "4:57")
+lh7  = Song.create!(title: "Final Hour" , album_id: a2.id , artist_id: a1.id , length: "4:16" )
+lh8  = Song.create!(title: "When It Hurts so Bad" , album_id: a2.id , artist_id: a1.id , length: "5:42")
+lh9  = Song.create!(title: "I Used to Love Him" , album_id: a2.id , artist_id: a1.id , length: "5:39" )
+lh10  = Song.create!(title: "Forgive Them Father" , album_id: a2.id , artist_id: a1.id , length: "5:15" )
+lh11  = Song.create!(title: "Every Ghetto, Every City" , album_id: a2.id , artist_id: a1.id , length: "5:14" )
+lh12  = Song.create!(title: "Nothing Even Matters" , album_id: a2.id , artist_id: a1.id , length: "5:50" )
+lh13  = Song.create!(title: "Everything Is Everything" , album_id: a2.id , artist_id: a1.id , length: "4:53")
+lh14  = Song.create!(title: "The Miseducation of Lauryn Hill" , album_id: a2.id , artist_id: a1.id , length: "3:55" )
+lh15  = Song.create!(title: "Can't Take My Eyes Off of You" , album_id: a2.id , artist_id: a1.id , length: "3:41")
+lh16  = Song.create!(title: "Tell Him" , album_id: a2.id , artist_id: a1.id , length: "4:40" )
+
+
+p1 = Playlist.create!(name: "lofi beats", user_id: u1.id)
+p1 = Playlist.create!(name: "shower jams", user_id: u2.id)
+p1 = Playlist.create!(name: "lit", user_id: u3.id)
+p1 = Playlist.create!(name: "tastebreakers", user_id: u4.id)
+p1 = Playlist.create!(name: "summer", user_id: u5.id)
+p1 = Playlist.create!(name: "study beat", user_id: u1.id)
+p1 = Playlist.create!(name: "gym bro", user_id: u1.id)
+p1 = Playlist.create!(name: "edm raver bro", user_id: u1.id)

@@ -6,6 +6,8 @@ import SplashContainer from './splash/splash_container';
 import LogInContainer from './session/login_container';
 import SignUpContainer from './session/signup_container';
 import LoggedInSplashContainer from './browse/logged_in_splash';
+import SearchContainer from './search/search_container';
+import CollectionHome from './collection/CollectionHome';
 
 const App = () => (
     <div>
@@ -14,6 +16,9 @@ const App = () => (
             <AuthRoute exact path="/signup" component={SignUpContainer} /> 
 
             <ProtectedRoute exact path="/browse/featured" component={LoggedInSplashContainer} />
+            <ProtectedRoute exact path="/browse/search" component={SearchContainer} />
+
+            <ProtectedRoute exact path="/collection/playlists" component={CollectionHome} />
             <Route path="/" component={SplashContainer} /> 
         </Switch>
 

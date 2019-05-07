@@ -16,16 +16,13 @@
     justify-content: space-between;
 }
 
-span {
+.nav-logo {
+    padding-left: 150px;
     float: left;
     color: #D9DADC;
     padding-top: 28px;
     padding-bottom: 28px;
     padding-right: 40px;
-}
-
-.nav-logo {
-    padding-left: 150px;
 }
 
 .nav-right {
@@ -34,10 +31,20 @@ span {
 
 .divider {
     font-weight: 100;
+    float: left;
+    color: #D9DADC;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 40px;
 }
 
 .login-text, .signup-text {
     font-weight: 700;
+    float: left;
+    color: #D9DADC;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 40px;
 }
 
 .link {
@@ -50,7 +57,7 @@ span {
     color: #1ED760;
 }
 
-a:visited {
+a.link:visited {
     color: rgb(156, 172, 204);
 }
 
@@ -65,29 +72,34 @@ a:visited {
 
 .splash {
     width: 100vw;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    position: absolute;
 }
 
 .get-free-link {
-    position: absolute;
-    top: 450px;
-    left: 587px;
-    z-index: 200;
-    width: 290px;
+    z-index: 2000;
+    width: 100vw;
     height: 50px;
-    padding-right: 0;
     border-radius: 20%;
+    color: #D9DADC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 60vh;
+    left: -1vh;
 }
 
 .button-link {
     color: #FFF;
-    width: 250px;
-    height: 50px;
+    height: 20px;
     background-color:#1DB954;
-    padding: 20px;
     font-size: 14px;
     line-height: 1;
     border-radius: 500px;
-    padding: 16px 48px 18px;
+    padding: 16px 35px 14px;
     letter-spacing: 2px;
     transition-duration: .3s;
 }

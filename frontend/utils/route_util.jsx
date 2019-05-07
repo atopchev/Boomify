@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Route, Redirect, withRouter } from 'react-router-dom';
 import Sidebar from '../components/sidebar/sidebar';
 import MusicPlayer from '../components/music_player/music_player';
+
 const Auth = ({ component: Component, path, loggedIn, exact }) => (
   	<Route 
 		path={path} 
@@ -22,7 +23,7 @@ const Protected = ({ component: Component, path, loggedIn, exact }) => (
 		render={(props) => (
 			loggedIn 
 			? ( 
-				<div className="all-comp-featured">
+				<div className="browse-featured-root">
 					<Sidebar {...props} />
 					<MusicPlayer {...props}/>
 					<Component {...props} />

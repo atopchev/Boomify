@@ -1,0 +1,28 @@
+
+.coll-home-root {
+    padding-left: 230px;
+    padding-bottom: 91px;
+}
+
+.new-playlist-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.new-playlist-btn {
+    background-color: #1db954;
+    border: 0;
+    border-radius: 500px;
+    color: #fff;
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 11px;
+    letter-spacing: .16em;
+    line-height: 1.6;
+    padding: 7px 22px;
+    position: static;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 auto;
+}

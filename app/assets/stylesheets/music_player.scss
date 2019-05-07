@@ -1,0 +1,14 @@
+.music-player-root {
+    height: 90px;
+    padding: 0 16px;
+    background-color: #282828;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    color: #b3b3b3;
+}

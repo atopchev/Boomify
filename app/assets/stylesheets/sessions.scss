@@ -5,12 +5,11 @@
     background: #FFF;
     color: #222326;
     min-width: 320px;
+    text-align: center;
 }
 
 .header {
-    border-bottom: 1px solid #d9dadc;
     padding: 25px 10px;
-    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     height: 107px;
@@ -23,7 +22,7 @@
 }
 
 #title-0 {
-    padding-top: 5px;
+    padding-top: 17px;
     letter-spacing: -1px;
     margin-left: 9px;
     display: flex;
@@ -46,23 +45,25 @@
     display: block;
 }
 .demo-login {
-    color: #FFF;
     background-color: #3B5998;
-    margin-bottom: 14px;
-    width: 300px;
+    border-radius: 500px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px;
-    border-radius: 500px;
-    padding: 16px 48px 18px; 
-    letter-spacing: 2px;
     min-width: 160px;
-    display: block;
-    cursor: pointer;
+    padding: 16px 48px 18px; 
+    width: 300px;
+    border: 1px solid grey;
 }
 
 .-or- {
-    width: 400px;
+    width: 350px;
     text-align: center;
     border-bottom: 1px solid #d9dadc;
     line-height: 0.1em;
@@ -75,10 +76,11 @@
 }
 .or {
     background-color: #fff;
+    color: #000033;
     padding: 0 13px;
     font-weight: bold;
     display: block;
-    left: 50%;
+    left: 45%;
     top: 50%;
     position: absolute;
     font-size: 14px;
@@ -86,12 +88,17 @@
 
 .subtext {
     text-align: center;
-    color: #1c1c1f;
+    color: #000033;
     font-weight: 900;
     line-height: 1.2;
-    margin: 0 0 10px;
-    padding-top: 10px;
+    margin: 0 0 15px;
+    padding-top: 15px;
 }
+
+.sessform-label {
+    display: block;
+}
+
 
 .i {
     cursor: text;
@@ -104,8 +111,10 @@
     color: #1c1c1f;
     font-size: .9375em;
     line-height: normal;
-    padding: 12px 12px;
+    padding: 6px 12px;
     margin: 8px 0;
+    // position: relative;
+    // display: block;
 }
 
 .sub-btn {
@@ -113,15 +122,31 @@
     margin-right: auto;
     color: #FFF;
     background-color: #1DB954;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
     border-radius: 500px;
     padding: 16px 48px 18px;
     letter-spacing: 2px;
     min-width: 160px;
     display: block;
-    // width: 100%;
     font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
     vertical-align: middle;
+    border: 1px solid #1DB954;
 }
+
+.subtext-switch-url {
+    font-size: .9375em;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+.login-instead {
+    text-decoration: none;
+    color: #1DB954;
+    font-size: inherit;
+    letter-spacing: inherit;
+    margin-top: inherit;
+}
+

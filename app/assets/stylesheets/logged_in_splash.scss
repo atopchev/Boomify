@@ -1,0 +1,56 @@
+.browse-featured-root { //route_util.jsx
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(54, 80, 99), rgb(5, 8, 10) 100%);
+}
+
+.main-root {
+    padding-left: 230px;
+    padding-bottom: 91px;
+}
+
+.anotha-wan {
+    padding: 0 32px;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.made-4-u {
+    margin-bottom: 50px;
+}
+
+.playlists-4-u {
+    margin: 20px 0;
+}
+
+.top-nav-link-vm {
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: .16em;
+    margin:10px;
+    opacity: .6;
+    position: relative;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    right: 20px;
+}
+
+.for-u-header-txt {
+    float: left;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -.005em;
+    // font-weight: ;
+    color: #fff;
+    text-transform: none;
+    margin-right: 200px;
+}
+
+.playlist-idx-root {
+    // position: fixed;
+    top: 160px;
+}

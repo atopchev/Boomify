@@ -43,11 +43,11 @@ class SessionForm extends React.Component {
         if (this.props.formType === "Sign Up") {
             email = 
                 <>
-                    <label>
-                        <input className="i" placeholder="email" type="text" value={this.state.email} onChange={this.update("email")} />
+                    <label className="sessform-label">
+                        <input className="i" placeholder="Email" type="text" value={this.state.email} onChange={this.update("email")} />
                     </label>
-                    <label> 
-                        <input className="i" placeholder="confirm email" type="text"/>
+                    <label className="sessform-label"> 
+                        <input className="i" placeholder="Confirm email" type="text"/>
                     </label> 
                 </>
         };
@@ -56,10 +56,11 @@ class SessionForm extends React.Component {
         if (this.props.formType === "Log In") {
             loginExtra = 
                 <>
-                    <input type="checkbox" /> Remember me
-                    <div className="forgot-pw-row"> forgot your pw?</div>
-                    <div className="signup-section"> sign up instead </div>
-                    <div className="terms-conds"> terms and conds </div>
+                    {/* <input type="checkbox" /> Remember me */}
+                    <div className="subtext-switch-url">Don't have an account?&nbsp;
+                        <Link to="/signup" className="login-instead"> Sign up</Link> instead
+                    </div>
+                <br></br>
                 </>
         }
 
@@ -67,10 +68,10 @@ class SessionForm extends React.Component {
         if (this.props.formType === "Sign Up") {
             signupExtras = 
                 <>
-                    {/* DOB */}
-                    {/* //recaptcha?? */}
-                    <div className="terms"> terms 1</div>
-                    <div className="conds"> conds </div>
+                    <div className="subtext-switch-url">Already have an account?&nbsp;
+                        <Link to="/login" className="login-instead"> Log in</Link> instead
+                    </div>
+                    <br></br>
                 </>
         }
 
@@ -101,19 +102,20 @@ class SessionForm extends React.Component {
                         </div>
                         <form onSubmit={this.handleSubmit}>
                             {email}
-                            <label>
+                            <label className="sessform-label">
                                 <input className="i" placeholder="Username" type="text" value={this.state.username} onChange={this.update("username")} />
                             </label>
-                            <label> 
+                            <label className="sessform-label"> 
                                 <input className="i" placeholder="Password" type="password" value={this.state.password} onChange={this.update("password")} />
                             </label>
                             <div className="row-submit">
                                 <br></br>
                                 {signupExtras}
+                                {loginExtra}  
                                 <input className="sub-btn" type="submit" value={this.props.formType}/>
+                                <br></br>
                             </div>
                         </form>
-                        {loginExtra}  
                     </div>
                 </div>
             </div>

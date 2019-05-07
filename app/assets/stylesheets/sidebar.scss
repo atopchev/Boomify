@@ -1,0 +1,194 @@
+.sidebar-root {
+    left: 0;
+    padding-bottom: 114px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 88%;
+    z-index: 4;
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto;
+    min-height: 0 !important;
+    will-change: transform;
+    overflow-x: hidden;
+    flex: 1;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    cursor: default;
+    color: #b3b3b3;
+}
+
+.nav-bar {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 5px;
+    width: 230px;
+}
+
+.nav-white-top-logo {
+    padding-left: 24px;
+    padding-bottom: 18px;
+    color:white;
+    float: left;
+}
+
+.top-splsh-lnk {
+    cursor: pointer;
+    width: 200px;
+}
+.top-splsh-lnk:visited {
+    color: white;
+}
+
+.logo-white {
+    width: 45px;
+    height: auto;
+    float: left;
+}
+
+.boomify-text-nav {
+    float: left;
+    margin: 15px 0 0 5px ;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+
+.boomify-text-nav-r {
+    font-size: 5px;
+    font-weight: 100;
+    float: left;
+    margin-top: 23px;
+}
+
+//nav-tabs==================
+
+.nav-link {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .015em;
+    padding: 3px 0;
+}
+
+.nav-link-tab {
+    font-size: 14px;
+    color: #b3b3b3;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav-link-tab:active, 
+    .nav-link-tab:hover {
+    color: white;
+    .green-active-thing {
+        background-color: #1ed760;
+    }
+}
+.nav-link-tab:focus {
+    color:white;
+}
+
+.svg-margin {
+    margin-left: 15px;
+    width: 27px;
+    height: 33px;
+}
+
+.green-active-thing {
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    margin-right: 10px;
+    background-color:  rgba(0,0,0,0.8);
+    height: 34px;
+}
+
+.nav-link-tab-txt {
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    font-size: 14px;
+    margin-left: 16px;
+    padding-top: 7px;
+    flex: 1;
+    min-width: 0;
+}
+
+//==========================
+
+.rec-playd-nav-bar {
+    height: 55%;
+    margin: 10px 0 0 0;
+    padding: 24px 0 7px 24px;
+}
+.rec-plyd-pic {
+    height: 90px;
+    width: auto;
+    margin-top: 5px;
+}
+
+.rec-plyd-txt {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    color: #fff;
+    opacity: .6;
+    margin-left: 10px;
+}
+//auth======================
+.user-name {
+    flex-direction: row;
+    display: flex;
+    padding-left: 4px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.prof-pic {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: block;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 5px 5px 5px 0;
+}
+
+.username-txt {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 700; 
+    margin: 10px 0 10px 5px;
+    color: white;
+    opacity: .9;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+
+.logout-button {
+    padding-top: 12px;
+    margin: 0 auto 10px auto;
+    width: 180px;
+    height: 30px;
+    border-bottom: 1px solid #404040;
+
+}
+
+.lo-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 500px;
+    color: white;
+    opacity: .6;
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: 1.3px;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+

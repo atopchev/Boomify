@@ -1,0 +1,25 @@
+.top-nav-links-root {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.top-nav-link {
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: .16em;
+    margin:10px;
+    opacity: .6;
+    position: relative;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.top-nav-link:active, 
+    .top-nav-link:hover {
+    opacity: 1;
+    color:white;
+}

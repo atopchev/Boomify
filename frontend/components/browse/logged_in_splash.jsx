@@ -1,24 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import TopNavLinks from './top_nav_links';
+import PlaylistIndex from '../playlist/playlist_index';
+import AlbumIndex from '../album/album_index';
+import ArtistIndex from '../artist/artist_index';
+
 class LoggedInSplash extends React.Component {
 
     render(){
         return(
             <div className="main-root"> 
 
-                Hey this is ur main content 
+                <div className="anotha-wan">
 
-                <TopLinks />
+                    <TopNavLinks />
 
-                <h1>Made for CurrentUsername</h1>
-                {/* playlist icons */}
+                    <section className="made-4-u">
+                        <div className="playlists-4-u">
+                            <h1 className="for-u-header-txt">Made for You</h1>
+                            <Link className="top-nav-link-vm" to="">View More</Link>
+                        </div>
 
-                <h1>New Releases</h1>
-                {/* album icons */}
+                    </section>
+                    <br></br>
+                    <PlaylistIndex />
 
-                <h1>Recently Played</h1>
-                {/* artist icons */}
+                    <section className="made-4-u">
+                        <div className="playlists-4-u">
+                            <h1 className="for-u-header-txt">New Releases</h1>
+                            <Link className="top-nav-link-vm" to="">View More</Link>
+                        </div>
+                    </section>
+                    <br></br>
+                    <AlbumIndex />
+
+                    <section className="made-4-u">
+                        <div className="playlists-4-u">
+                            <h1 className="for-u-header-txt">Recently Played</h1>
+                            <Link className="top-nav-link-vm" to="">View More</Link>
+                        </div>
+                    </section>  
+                    <br></br>                 
+                    <ArtistIndex />
+                    
+                </div>
 
             </div>
         )
