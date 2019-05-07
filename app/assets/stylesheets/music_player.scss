@@ -1,5 +1,6 @@
+
 .music-player-root {
-    height: 90px;
+    height: 82px;
     padding: 0 16px;
     background-color: #282828;
     border-top: 1px solid #000;
@@ -8,7 +9,129 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100vw;
+    width: 98%;
     bottom: 0;
     color: #b3b3b3;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+
+.curr-song-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.curr-song-album {
+    width: 59px;
+    height: 59px;
+    box-shadow: .5px .5px 12px 0px black;
+}
+
+.curr-song-t-a {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .015em;
+    margin-left: 12px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.curr-song-title {
+    color: #FFF;
+    line-height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.curr-song-artist {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.save-btn {
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-weight: 100;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+}
+
+//============
+
+.music-control-panel {
+    width: 40%;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.control-panel {
+    cursor: pointer;
+    margin: 15px;
+    opacity: .4;
+    width: 13px;
+}
+
+.control-panel-p {
+    width: 50px;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.time-bar {
+    width: 90%;
+}
+
+.right, .left {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: .015em;
+    min-width: 40px;
+    // text-align: center;
+}
+
+.time-bar {
+    padding-bottom: 3px;
+    align-content: center;
+}
+
+
+//==============
+.volume-n-extras {
+    // padding:0 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.vol {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.v-r {
+  appearance: none;
+  width: 90%; 
+  height: 20px; 
+  background: #d3d3d3; 
+  opacity: 0.5;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.v-r:hover {
+  opacity: 1; 
 }

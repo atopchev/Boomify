@@ -22,4 +22,22 @@
     .top-nav-link:hover {
     opacity: 1;
     color:white;
+    .green-active-thing-top {
+        background-color: #1ed760;
+    }
+}
+
+ .top-nav-link:focus {
+    color: white;
+    opacity: 1;
+      .green-active-thing-top {
+          background-color: #1ed760;
+      }
+ }
+
+.green-active-thing-top {
+    margin: 3px auto;
+    height: 2px;
+    width: 30px;
+
 }

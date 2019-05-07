@@ -37,7 +37,7 @@ class Sidebar extends React.Component {
                 <ul>
                     <li className="nav-link">
                         <Link to="/browse/featured" className="nav-link-tab">
-                        <span className="green-active-thing"></span>
+                        <Link className="green-active-thing"></Link>
                             <svg className="svg-margin" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                                 <path 
                                     d="M 256.274 60.84 L 84.324 166.237 L 84.324 
@@ -58,7 +58,7 @@ class Sidebar extends React.Component {
 
                     <li className="nav-link">
                         <Link to="/browse/search" className="nav-link-tab">
-                        <span className="green-active-thing"></span>
+                        <Link className="green-active-thing"></Link>
                             <svg className="svg-margin"  viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" 
                                     fill="currentColor" 
@@ -71,7 +71,7 @@ class Sidebar extends React.Component {
 
                     <li className="nav-link">
                         <Link to="/collection/playlists" className="nav-link-tab">
-                        <span className="green-active-thing"></span>
+                        <Link className="green-active-thing"></Link>
                             <svg className="svg-margin"  viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" 
                                      fill="currentColor">
@@ -87,14 +87,16 @@ class Sidebar extends React.Component {
                     <img className="rec-plyd-pic" src={window.images.rec_played}></img>
                 </div>
 
-                <div className="logout-button">
-                    <button className="lo-btn"onClick={this.handleSubmit}>Log Out</button>
+                <div className="bottom-sidebar">
+                    <div className="logout-button">
+                        <button className="lo-btn"onClick={this.handleSubmit}>Log Out</button>
+                    </div>
+                    <div className="user-name">
+                        <img className="prof-pic" src={window.images.prof_pic}></img>
+                        <p className="username-txt">Angela</p>
+                    </div>
                 </div>
-                
-                <div className="user-name">
-                    <img className="prof-pic" src={window.images.prof_pic}></img>
-                    <p className="username-txt">Angela</p>
-                </div>
+
             </div>
         )
     }

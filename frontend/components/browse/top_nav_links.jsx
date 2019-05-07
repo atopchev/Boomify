@@ -8,10 +8,27 @@ class TopNavLinks extends React.Component {
     render() {
         return (
             <div className="top-nav-links-root"> 
-                <Link className="top-nav-link" to="/browse/featured">Featured</Link>
-                <Link className="top-nav-link" >New Releases</Link>
-                <Link className="top-nav-link" >Genres</Link>
-                <Link className="top-nav-link" >Discover</Link>
+
+                <Link className="top-nav-link" to="/browse/featured">
+                    Featured
+                    <div className="green-active-thing-top"></div>
+                </Link>
+
+                <Link className="top-nav-link" >
+                    New Releases
+                    <div className="green-active-thing-top"></div>
+                </Link>
+
+                <Link className="top-nav-link" >
+                    Genres
+                    <div className="green-active-thing-top"></div>
+                </Link>
+
+                <Link className="top-nav-link" >
+                    Discover
+                    <div className="green-active-thing-top"></div>
+                </Link>
+
             </div>
         );
     }

@@ -10,10 +10,22 @@ class CollectionHome extends React.Component {
         <div className="coll-home-root">
 
             <div className="top-nav-links-root">
-                <Link className="top-nav-link" to="/collection/playlists">Playlists</Link>
-                {/* <Link className="top-nav-link" to="/collection/songs">Songs</Link> */}
-                <Link className="top-nav-link" to="">Albums</Link>
-                <Link className="top-nav-link" to="">Artists</Link>
+                <Link className="top-nav-link" to="/collection/playlists">
+                    Playlists
+                    <div className="green-active-thing-top"></div>
+                </Link>
+                <Link className="top-nav-link" to="/collection/songs">
+                    Songs
+                    <div className="green-active-thing-top"></div>
+                </Link>
+                <Link className="top-nav-link" to="">
+                    Albums
+                    <div className="green-active-thing-top"></div>
+                </Link>
+                <Link className="top-nav-link" to="">
+                    Artists
+                    <div className="green-active-thing-top"></div>
+                </Link>
             </div>
 
             <div className="new-playlist-div">

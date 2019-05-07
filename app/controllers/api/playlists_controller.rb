@@ -14,7 +14,7 @@ class Api::PlaylistsController < ApplicationController
         if @playlist.save
             render :show
         else 
-
+            render @json.errors.full_messages
         end
     end
 
@@ -24,14 +24,14 @@ class Api::PlaylistsController < ApplicationController
         if @playlist.update(playlist_params)
             render :show
         else 
-
+            render @json.errors.full_messages
         end
     end
 
     def destroy
         @playlist = Playlist.find(params[:id])
         @playlist.destroy
-
+        render :show
     end
 
     private 
