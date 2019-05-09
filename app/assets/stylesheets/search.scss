@@ -1,0 +1,34 @@
+.search-root {
+    padding-left: 230px;
+    width: 100%;
+}
+
+.b {
+    width: 100vw;
+    height: 100vh;
+    background-color: #151515;
+}
+
+.search-input-div {
+    height: 54px;
+    width: 100%;
+    position: fixed;
+    background-color: #282828;
+    padding: 16px;
+    top: 0;
+}
+
+.search-input {
+    background-color: transparent;
+    border:none;
+    color: white;
+    caret-color: #1db954;
+    font-family: spotify-circular, spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -.005em;
+    padding: 0 32px;
+}
+
+

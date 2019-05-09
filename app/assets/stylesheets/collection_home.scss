@@ -1,7 +1,17 @@
 
 .coll-home-root {
+    height: 100%;
     padding-left: 230px;
     padding-bottom: 91px;
+    background-image: 
+        linear-gradient(
+            to right bottom, 
+            rgb(84, 69, 75),
+            rgb(0, 0, 0)), 
+            linear-gradient(
+                transparent, 
+                rgb(0, 0, 0) 
+                70%);
 }
 
 .new-playlist-div {

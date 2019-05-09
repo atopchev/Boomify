@@ -13,7 +13,9 @@ class ArtistIndex extends React.Component {
 
     render() {
         return (
-            <h1>artit index</h1>
+            <div className="artist-idx-root">
+                
+            </div>
         );
     }
 

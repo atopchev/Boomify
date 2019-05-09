@@ -6,9 +6,14 @@ class Search extends React.Component {
 
         return (
             <div className="search-root">
-                <div className="">
 
+                <div className="b">
                 </div>
+
+                <div className="search-input-div">
+                    <input type="text" className="search-input" placeholder="Start typing..." />
+                </div>
+
             </div>
         )
     }

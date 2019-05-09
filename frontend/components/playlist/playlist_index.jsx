@@ -1,28 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { fetchPlaylists } from '../../actions/playlist_actions';
+import PlaylistIndexItem from './playlist_index_item';
+
 
 class PlaylistIndex extends React.Component {
 
-    constructor(props){
-        super(props);
+    componentDidMount(){
+        this.props.fetchPlaylists();
     }
-
-    // componentDidMount(){
-    // }
 
     render() {
-
+        let playlists = this.props.playlists.map( (playlist, idx) =>
+                <PlaylistIndexItem key={idx} playlist={playlist} /> 
+            );
+            
         return (
-            <h1>test this is my playlist index</h1>
+            <div className="playlist-idx-div"> 
+                {playlists}
+            </div>
         )
     }
+};
 
-}
 
+const msp = state => ({
+    playlists: Object.values(state.entities.playlists)
+});
 
-const msp = state => ({});
-
-const mdp = dispatch => ({});
+const mdp = dispatch => ({
+    fetchPlaylists: () => dispatch(fetchPlaylists()),
+    createPlaylist: (playlist) => dispatch(createPlaylist(playlist))
+});
 
 export default connect(msp, mdp)(PlaylistIndex);

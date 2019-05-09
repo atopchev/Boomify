@@ -22,9 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.getState = store.getState;
-    window.login = login;
-    window.dispatch = store.dispatch;
-    window.logout = logout;
 
     const root = document.getElementById('root');
     ReactDOM.render(

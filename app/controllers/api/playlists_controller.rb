@@ -2,6 +2,7 @@ class Api::PlaylistsController < ApplicationController
 
     def index
         @playlists = Playlist.all
+        render "api/playlists/index"
     end
 
     def show 
