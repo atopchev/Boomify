@@ -8,9 +8,12 @@ import SignUpContainer from './session/signup_container';
 import LoggedInSplashContainer from './browse/logged_in_splash';
 import SearchContainer from './search/search_container';
 import CollectionHome from './collection/CollectionHome';
+import CreatePlaylistModal from './modal/modal';
 
 const App = () => (
     <div>
+        <CreatePlaylistModal />
+
         <Switch> 
             <AuthRoute exact path="/login" component={LogInContainer} /> 
             <AuthRoute exact path="/signup" component={SignUpContainer} /> 
@@ -21,6 +24,7 @@ const App = () => (
             <ProtectedRoute exact path="/collection/playlists" component={CollectionHome} />
             <Route path="/" component={SplashContainer} /> 
         </Switch>
+
 
     
     </div>

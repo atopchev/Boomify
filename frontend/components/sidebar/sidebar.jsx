@@ -37,7 +37,7 @@ class Sidebar extends React.Component {
                 <ul>
                     <li className="nav-link">
                         <Link to="/browse/featured" className="nav-link-tab">
-                        <Link className="green-active-thing"></Link>
+                        <Link to="" className="green-active-thing"></Link>
                             <svg className="svg-margin" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                                 <path 
                                     d="M 256.274 60.84 L 84.324 166.237 L 84.324 

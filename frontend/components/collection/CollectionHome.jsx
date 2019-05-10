@@ -33,7 +33,7 @@ class CollectionHome extends React.Component {
                 </div>
 
                 <div className="new-playlist-div">
-                    <button className="new-playlist-btn" onClick={() => this.props.openModal()}>NEW PLAYLIST</button>
+                    <button className="new-playlist-btn" onClick={this.props.openModal}>NEW PLAYLIST</button>
                 </div>
 
                 <br></br>

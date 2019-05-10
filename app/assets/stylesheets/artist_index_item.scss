@@ -1,0 +1,41 @@
+.artist-index-item-root {
+    text-align: center;
+}
+
+.artist-tile {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+} 
+
+.a-img:hover {
+    opacity:0.5;
+}
+
+.transition-img {
+    background-color: black; 
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 15px 0px #171b2a;
+    position: absolute;
+}
+
+.a-img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 15px 0px #171b2a;
+    position: relative;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.a-name {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 12px 0 4px;
+
+}

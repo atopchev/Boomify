@@ -2,7 +2,7 @@ import PlaylistFormComponent from '../playlist/playlist_form';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import { createPlaylist } from '../../actions/playlist_actions';
-
+import React from 'react';
 
 
 class Modal extends React.Component {
@@ -31,24 +31,30 @@ class Modal extends React.Component {
     }
 
     render() {
+        console.log(this.props.modal);
+        if (!this.props.modal) return null;
+
         return (
-            <div className="create-playlist-modal-root">
+            <div className="window-behind-modal">
+                <div className="modal-root" >
 
-                <button className="close-btn" onClick={this.props.closeModal}>x</button>
-                <h1 className="form-title"> Create new playlist</h1>
+                    <button className="close-btn" onClick={this.props.closeModal}>x</button>
+                    <h1 className="form-title"> Create new playlist</h1>
 
-                <form className="form-root" onSubmit={this.handleCreate}>
-                    <input
-                        className="form-input"
-                        placeholder="Start typing..."
-                        value={this.state.title}
-                        onChange={this.update('title')}
-                    />
-                </form>
+                    <form className="form-root" onSubmit={this.handleCreate}>
+                        <h4 class="inputBox-label">Playlist Name</h4>
+                        <input
+                            className="form-input"
+                            placeholder="Start typing..."
+                            value={this.state.title}
+                            onChange={this.update('title')}
+                        />
+                    </form>
 
-                <div className="btns-root">
-                    <button className="cancel-p-btn" onClick={this.props.closeModal}>cancel</button>
-                    <button className="create-p-btn" onClick={this.handleSubmit}>create</button>
+                    <div className="btns-root">
+                        <button className="cancel-p-btn" onClick={this.props.closeModal}>cancel</button>
+                        <button className="create-p-btn" onClick={this.handleSubmit}>create</button>
+                    </div>
                 </div>
 
             </div>

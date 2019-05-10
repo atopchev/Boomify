@@ -12,7 +12,7 @@ class PlaylistIndex extends React.Component {
 
         let images;
         if (this.props.location === "browse") {
-            images = 1;
+            images = 1; 
         } else {
             images = 9;
         }
@@ -22,7 +22,9 @@ class PlaylistIndex extends React.Component {
                     key={idx} 
                     playlist={playlist} 
                     imgNum={images++} 
-                    location={this.props.location}/> );
+                    location={this.props.location} 
+                /> 
+            );
 
         return (
             <div className="playlist-idx-div"> 

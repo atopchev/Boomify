@@ -9,14 +9,15 @@ class Api::SongsController < ApplicationController
         if @song 
             render :show
         else 
-            
+            nil
         end
     end
 
     private
-    def song_params
-        params.require(:song).permit(:name, :artist_id, :album_id. :length)
-    end
+
+    # def song_params
+    #     params.require(:song).permit(:name, :artist_id, :album_id. :length)
+    # end
 
 
 end

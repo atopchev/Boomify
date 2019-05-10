@@ -26,23 +26,25 @@ class LoggedInSplash extends React.Component {
                     <br></br>
                     <PlaylistIndexBrowseContainer />
 
-                    <section className="made-4-u">
+
+                    {/* <section className="made-4-u">
+                        <div className="playlists-4-u">
+                            <h1 className="for-u-header-txt">Recently Played</h1>
+                            <Link className="top-nav-link-vm" to="">View More</Link>
+                        </div>
+                    </section>  
+                    <br></br>                  */}
+                    {/* <ArtistIndex /> */}
+
+                    
+                    {/* <section className="made-4-u">
                         <div className="playlists-4-u">
                             <h1 className="for-u-header-txt">New Releases</h1>
                             <Link className="top-nav-link-vm" to="">View More</Link>
                         </div>
                     </section>
                     <br></br>
-                    <AlbumIndex />
-
-                    <section className="made-4-u">
-                        <div className="playlists-4-u">
-                            <h1 className="for-u-header-txt">Recently Played</h1>
-                            <Link className="top-nav-link-vm" to="">View More</Link>
-                        </div>
-                    </section>  
-                    <br></br>                 
-                    <ArtistIndex />
+                    <AlbumIndex /> */}
                     
                 </div>
 
