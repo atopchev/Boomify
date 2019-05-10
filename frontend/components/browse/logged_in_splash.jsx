@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import TopNavLinks from './top_nav_links';
-import PlaylistIndex from '../playlist/playlist_index';
+import PlaylistIndexBrowseContainer from '../playlist/playlist_index_browse_container';
 import AlbumIndex from '../album/album_index';
 import ArtistIndex from '../artist/artist_index';
 
@@ -24,7 +24,7 @@ class LoggedInSplash extends React.Component {
 
                     </section>
                     <br></br>
-                    <PlaylistIndex />
+                    <PlaylistIndexBrowseContainer />
 
                     <section className="made-4-u">
                         <div className="playlists-4-u">

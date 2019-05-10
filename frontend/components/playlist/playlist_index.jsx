@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { fetchPlaylists } from '../../actions/playlist_actions';
 import PlaylistIndexItem from './playlist_index_item';
 
 
@@ -11,10 +9,21 @@ class PlaylistIndex extends React.Component {
     }
 
     render() {
-        let playlists = this.props.playlists.map( (playlist, idx) =>
-                <PlaylistIndexItem key={idx} playlist={playlist} /> 
-            );
-            
+
+        let images;
+        if (this.props.location === "browse") {
+            images = 1;
+        } else {
+            images = 9;
+        }
+        let playlists = 
+            this.props.playlists.map( (playlist, idx) =>
+                <PlaylistIndexItem 
+                    key={idx} 
+                    playlist={playlist} 
+                    imgNum={images++} 
+                    location={this.props.location}/> );
+
         return (
             <div className="playlist-idx-div"> 
                 {playlists}
@@ -23,14 +32,4 @@ class PlaylistIndex extends React.Component {
     }
 };
 
-
-const msp = state => ({
-    playlists: Object.values(state.entities.playlists)
-});
-
-const mdp = dispatch => ({
-    fetchPlaylists: () => dispatch(fetchPlaylists()),
-    createPlaylist: (playlist) => dispatch(createPlaylist(playlist))
-});
-
-export default connect(msp, mdp)(PlaylistIndex);
+export default PlaylistIndex;
