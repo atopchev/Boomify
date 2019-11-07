@@ -1,5 +1,12 @@
+.whole-spl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .splash-top-nav {
+    position: relative;
+    top: -500px;
     box-sizing: border-box;
     right: 0;
     left: 0;
@@ -7,6 +14,8 @@
     background-color: rgba(0, 0, 0, 0.6);
     width: 100vw;
     height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -16,21 +25,33 @@
     justify-content: space-between;
 }
 
+.spl-logo-white {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
 .nav-logo {
+    align-items: center;
     padding-left: 150px;
+    display: flex;
+    flex-direction: row;
     float: left;
-    color: #D9DADC;
+    color: white;
     padding-top: 28px;
     padding-bottom: 28px;
-    padding-right: 40px;
+    padding-right: 490px;
 }
 
 .nav-right {
     padding-right: 50px;
+    display:flex;
+    align-items: center;
 }
 
 .divider {
     font-weight: 100;
+    font-size: 20px;
     float: left;
     color: #D9DADC;
     padding-top: 28px;
@@ -38,7 +59,7 @@
     padding-right: 40px;
 }
 
-.login-text, .signup-text {
+.link-span {
     font-weight: 700;
     float: left;
     color: #D9DADC;
@@ -51,23 +72,22 @@
     font-family: Circular, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-}
-
-.signup-text a.link:hover {
-    color: #1ED760;
+    // color: #d9dadc;
+    color: white;
 }
 
 a.link:visited {
-    color: rgb(156, 172, 204);
+    // color: #d9dadc;
+    color: white;
+}
+
+a.link:hover {
+    color: #1ED760;
 }
 
 .main-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 500px;
+    height: 615px;
     width: 100vw;
-    z-index: -1;
 }
 
 .splash {
@@ -79,7 +99,7 @@ a.link:visited {
 }
 
 .get-free-link {
-    z-index: 2000;
+    z-index: 90;
     width: 100vw;
     height: 50px;
     border-radius: 20%;
@@ -96,14 +116,110 @@ a.link:visited {
     color: #FFF;
     height: 20px;
     background-color:#1DB954;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bolder;
     line-height: 1;
     border-radius: 500px;
     padding: 16px 35px 14px;
     letter-spacing: 2px;
     transition-duration: .3s;
+    display: flex;
+    align-items: center;
 }
 
 .button-link:visited {
     color: white;
 }
+
+.middle-spl {
+    background-color: white;
+    height: 575px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-mid-spl {
+    align-items: center;
+    background-color: #C3F0C9;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    justify-content: center;
+    max-height: 480px;
+    text-align: center;
+    padding: 40px;
+    max-width: 1100px;
+}
+
+.inner-header-0 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.inner-header-1 {
+    width: 600px;
+    font-size: 18px;
+}
+
+.inner-header-2 {
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.learn-more-wrap {
+    align-items: center;
+    border-radius: 20%;
+    color: #D9DADC;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin: 50px 0;
+    width: 100vw;
+    z-index: 90;
+}
+
+.button-link-blk {
+    color: #FFF;
+    height: 20px;
+    background-color:black;
+    font-size: 13px;
+    font-weight: bolder;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 16px 35px 14px;
+    letter-spacing: 2px;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;   
+}
+
+.sub-welc-header-spl {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-spl {
+    background: #000;
+    width: 100vw;
+    min-height: 200px;
+}
+
+//==== sticky nav :
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }

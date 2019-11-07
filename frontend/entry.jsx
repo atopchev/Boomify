@@ -28,4 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
         <Root store={store} />, 
         root
     );
+
 });

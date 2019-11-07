@@ -11,23 +11,20 @@ import CollectionHome from './collection/CollectionHome';
 import CreatePlaylistModal from './modal/modal';
 
 const App = () => (
-    <div>
+    <>
         <CreatePlaylistModal />
 
         <Switch> 
             <AuthRoute exact path="/login" component={LogInContainer} /> 
             <AuthRoute exact path="/signup" component={SignUpContainer} /> 
 
-            <ProtectedRoute exact path="/browse/featured" component={LoggedInSplashContainer} />
+            <ProtectedRoute exact path="/browse/featured" component={LoggedInSplashContainer} hi={"hello"}/>
             <ProtectedRoute exact path="/browse/search" component={SearchContainer} />
 
             <ProtectedRoute exact path="/collection/playlists" component={CollectionHome} />
             <Route path="/" component={SplashContainer} /> 
         </Switch>
-
-
-    
-    </div>
+    </>
 )
 
 export default App;
