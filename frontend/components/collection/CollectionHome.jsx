@@ -7,6 +7,10 @@ import PlaylistIndexCollectionContainer from '../playlist/playlist_index_collect
 
 
 class CollectionHome extends React.Component {
+// CHANGE THIS COMPONENT. RIGHT NOW YOU ARE RENDING THIS , DRY UP CODE BY PUTTING THE TOP NAV LINKS FOR COLLECTION IN THEIR OWN FUNCITONAL COMPONENT
+// AND THEN RENDER THAT FUNCTIONAL COMPONENT AT THE TOP OF THE PlaylistIndexCollectionContainer & ALL OTHER COMPONENTS THAT ARE LINKS IN THAT NAV. 
+
+// THAT WAY YOU CAN RM THIS COLLECTIONHOME CONTAINER
 
     render() {
         return (
@@ -22,7 +26,7 @@ class CollectionHome extends React.Component {
                         Songs
                         <div className="green-active-thing-top"></div>
                     </Link>
-                    <Link className="top-nav-link" to="">
+                    <Link className="top-nav-link" to="/collection/albums">
                         Albums
                         <div className="green-active-thing-top"></div>
                     </Link>

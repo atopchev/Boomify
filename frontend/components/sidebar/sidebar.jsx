@@ -27,7 +27,7 @@ class Sidebar extends React.Component {
                 <div className="nav-bar">
                     <div className="nav-white-top-logo">
                         <img className="logo-white" src={window.images.logo_white}></img>
-                        <Link to="/" className="top-splsh-lnk" >
+                        <Link to="/browse/featured" className="top-splsh-lnk" >
                             <p className="boombox-text-nav">Boombox</p>
                             <p className="boombox-text-nav-r">Ⓡ</p>
                         </Link>

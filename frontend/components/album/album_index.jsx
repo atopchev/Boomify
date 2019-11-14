@@ -1,20 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { fetchAlbums } from '../../actions/album_actions'
+import PlaylistIndexItem from '../playlist/playlist_index_item';
 
 class AlbumIndex extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount() {
-        // this.props.fetchAlbums();
+        this.props.fetchAlbums();
     }
 
     render() {
-        return (
-            <div className="album-idx-root">
+        let images = 1;
+        const myAlbums = this.props.albums.map( (album, idx) => 
+            <PlaylistIndexItem
+                key={idx}
+                playlist={album}
+                imgNum={images++}
+                location="collection"
+            /> 
+        )
 
+        return (
+            <div className="playlist-idx-div">
+                {myAlbums}
             </div>
 
         );
@@ -23,8 +32,8 @@ class AlbumIndex extends React.Component {
 }
 
 
-const msp = state => ({
-
+const msp = ({ entities }) => ({
+    albums: Object.values(entities.albums)
 });
 
 const mdp = dispatch => ({

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const PlaylistIndexItem = ({ playlist, imgNum }) => {
 
-
+    debugger;
     let authorSubtext;
     if (imgNum >= 9) {
         authorSubtext = <Link className="p-author"> {playlist.username} </Link>;
