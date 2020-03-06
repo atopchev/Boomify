@@ -5,7 +5,7 @@ class Splash extends React.Component {
 
 	render() {
 		const loggedOutSplash = () => (
-			<div className="whole-spl">
+				<div className="whole-spl">
 		
 				<div className="main-content">
 					<img className="splash" src={window.images.splash_bubbles}></img>
@@ -19,21 +19,21 @@ class Splash extends React.Component {
 					<div className="container">
 						<span className="nav-logo">
 							<img className="spl-logo-white" src={window.images.logo_white}/>
-							<h1>Boombox</h1>
+							<h1>Boomify</h1>
 						</span>
 
 						<div className="nav-right">
 
 							<span className="link-span">
-								<Link className="link" to="/"> Premium </Link>
+								<a class="link" href="https://www.linkedin.com/in/angelatopchev/"> LinkedIn </a>
 							</span>
 							
 							<span className="link-span">
-								<Link className="link" to="/"> Help </Link>
+								<a class="link" href="https://github.com/atopchev/Boomify"> GitHub </a>
 							</span>
 
 							<span className="link-span">
-								<Link className="link" to="/"> Download </Link>
+								<Link className="link" to="/"> Thoughts </Link>
 							</span>
 
 							<span className="divider">|</span>
