@@ -11,8 +11,7 @@ class ArtistIndex extends React.Component {
 
     render() {
 
-        let artists = 
-            this.props.artists.map( (artist, idx) => 
+        let artists = this.props.artists.map( (artist, idx) => 
                 <ArtistIndexItem
                     artist={artist}
                     key={idx}
@@ -30,9 +29,11 @@ class ArtistIndex extends React.Component {
 }
 
 
-const msp = state => ({
+const msp = state => {
+debugger;
+return {
     artists: Object.values(state.entities.artists)
-});
+}};
 
 const mdp = dispatch => ({
     fetchArtists: () => dispatch(fetchArtists())

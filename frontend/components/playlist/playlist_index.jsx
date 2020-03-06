@@ -16,8 +16,7 @@ class PlaylistIndex extends React.Component {
         } else {
             images = 9;
         }
-        let playlists = 
-            this.props.playlists.map( (playlist, idx) =>
+        let playlists = this.props.playlists.map( (playlist, idx) =>
                 <PlaylistIndexItem 
                     key={idx} 
                     playlist={playlist} 
