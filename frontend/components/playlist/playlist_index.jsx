@@ -9,27 +9,17 @@ class PlaylistIndex extends React.Component {
     }
 
     render() {
-
-        let images;
-        if (this.props.location === "browse") {
-            images = 1; 
-        } else {
-            images = 9;
-        }
-        let playlists = this.props.playlists.map( (playlist, idx) =>
+        let images = (this.props.location === "browse") ? 1 : 9;
+        let playlists = this.props.playlists.map( 
+            (playlist, idx) =>
                 <PlaylistIndexItem 
                     key={idx} 
                     playlist={playlist} 
                     imgNum={images++} 
                     location={this.props.location} 
                 /> 
-            );
-
-        return (
-            <div className="playlist-idx-div"> 
-                {playlists}
-            </div>
-        )
+        );
+        return (<div className="playlist-idx-div"> {playlists} </div>);
     }
 };
 
