@@ -2,7 +2,7 @@
 !/tmp/.keep
 
 /node_modules/
-/bundle.js*
+*/bundle.js*
 bundle.js
 bundle.js.map
 
@@ -14,6 +14,6 @@ npm-debug.log
 /storage/*
 /yarn-error.log/public/assets
 
-/log/*
+*/log/*
 log/*
 /log/.keep
