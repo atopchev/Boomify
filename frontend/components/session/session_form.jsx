@@ -82,7 +82,7 @@ class SessionForm extends React.Component {
                     <Link to="/" className="session-to-splash" >
                         <header className="header">
                             <img className="header-logo" src={window.images.logo}/>
-                            <p id="title-0">Boombox</p>
+                            <p id="title-0">Boomify</p>
                         </header>
                     </Link>
                 </div>
