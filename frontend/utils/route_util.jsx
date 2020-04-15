@@ -16,6 +16,24 @@ const Auth = ({ component: Component, path, loggedIn, exact }) => (
 	/>
 );
 
+/**
+ * 
+ * don't allow a user to see the logged out splash. 
+ * If they are logged in, redirect them to "/browse/featured"
+ * 		instead of the "/" root (only viewable to logged out user). 
+ */
+const Splash = ({ component: Component, path, loggedIn, exact }) => (
+	<Route
+		path={path}
+		exact={exact}
+		render={(props) => (
+			!loggedIn
+				? (<Component {...props} />)
+				: (<Redirect to="/browse/featured" />)
+		)}
+	/>
+);
+
 const Protected = ({ component: Component, path, loggedIn, exact }) => (
   	<Route 
 		path={path} 
@@ -40,3 +58,4 @@ const msp = state => (
 
 export const AuthRoute = withRouter(connect(msp)(Auth));
 export const ProtectedRoute = withRouter(connect(msp)(Protected));
+export const SplashProtected = withRouter(connect(msp)(Splash));

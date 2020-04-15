@@ -8,16 +8,16 @@ const TopNavLinks = () => (
             Playlists
                         <div className="green-active-thing-top"></div>
         </Link>
+        <Link className="top-nav-link" to="/collection/artists">
+            Artists
+                        <div className="green-active-thing-top"></div>
+        </Link>
         <Link className="top-nav-link" to="/collection/songs">
             Songs
                         <div className="green-active-thing-top"></div>
         </Link>
         <Link className="top-nav-link" to="/collection/albums">
             Albums
-                        <div className="green-active-thing-top"></div>
-        </Link>
-        <Link className="top-nav-link" to="/collection/artists">
-            Artists
                         <div className="green-active-thing-top"></div>
         </Link>
     </div>

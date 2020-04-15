@@ -1,5 +1,5 @@
 {
-  "name": "Boombox",
+  "name": "Boomify",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.7.0",
@@ -29,19 +29,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atopchev/Boombox.git"
+    "url": "git+https://github.com/atopchev/Boomify.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atopchev/Boombox/issues"
+    "url": "https://github.com/atopchev/Boomify/issues"
   },
   "engines": {
     "node": "10.13.0",
     "npm": "6.4.1"
   },
-  "homepage": "https://github.com/atopchev/Boombox#readme",
+  "homepage": "https://github.com/atopchev/Boomify#readme",
   "devDependencies": {
     "webpack-cli": "^3.3.10"
   }

@@ -19,7 +19,7 @@ class PlaylistIndex extends React.Component {
                     location={this.props.location} 
                 /> 
         );
-        return (<div className="playlist-idx-div"> {playlists} </div>);
+        return (<div id="playlist-idx-div" className="playlist-idx-div"> {playlists} </div>);
     }
 };
 

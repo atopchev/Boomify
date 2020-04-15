@@ -3,6 +3,16 @@ import { connect } from 'react-redux';
 import { fetchArtists } from '../../actions/artist_actions';
 import ArtistIndexItem from './artist_index_item';
 
+const msp = state => {
+    return {
+    artists: Object.values(state.entities.artists)
+}};
+
+const mdp = dispatch => ({
+    fetchArtists: () => dispatch(fetchArtists())
+});
+
+
 class ArtistIndex extends React.Component {
 
     componentDidMount() {
@@ -10,7 +20,6 @@ class ArtistIndex extends React.Component {
     }
 
     render() {
-
         let artists = this.props.artists.map( (artist, idx) => 
                 <ArtistIndexItem
                     artist={artist}
@@ -20,23 +29,11 @@ class ArtistIndex extends React.Component {
             );
             
         return (
-            <div className="artist-idx-root">
-                {artists}
-            </div>
+            <div className="artist-idx-root">{artists}</div>
         );
     }
-
 }
 
 
-const msp = state => {
-debugger;
-return {
-    artists: Object.values(state.entities.artists)
-}};
-
-const mdp = dispatch => ({
-    fetchArtists: () => dispatch(fetchArtists())
-});
 
 export default connect(msp, mdp)(ArtistIndex);

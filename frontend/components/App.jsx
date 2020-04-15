@@ -1,17 +1,18 @@
 import React from 'react'
-import { AuthRoute, ProtectedRoute } from '../utils/route_util'
-import { Route, Switch } from 'react-router-dom'
-import SplashContainer from './splash/splash_container'
-import LogInContainer from './session/login_container'
-import SignUpContainer from './session/signup_container'
-import LoggedInSplashContainer from './browse/logged_in_splash'
-import SearchContainer from './search/search_container'
-import CollectionHome from './collection/CollectionHome'
-import CreatePlaylistModal from './modal/modal'
-import PlaylistShow from './playlist/playlist_show'
-import AlbumIndex from './album/album_index'
-import SongIndex from './songs/song_index'
-import ArtistIndex from './artist/artist_index'
+import { AuthRoute, ProtectedRoute, SplashProtected } from '../utils/route_util';
+import { Route, Switch } from 'react-router-dom';
+import SplashContainer from './splash/splash_container';
+import LogInContainer from './session/login_container';
+import SignUpContainer from './session/signup_container';
+import LoggedInSplashContainer from './browse/logged_in_splash';
+import SearchContainer from './search/search_container';
+import CollectionHome from './collection/CollectionHome';
+import CollectionArtist from './collection/CollectionArtist';
+import CreatePlaylistModal from './modal/modal';
+import PlaylistShow from './playlist/playlist_show';
+import AlbumIndex from './album/album_index';
+import SongIndex from './songs/song_index';
+import Splash from './splash/splash';
 
  
 
@@ -30,14 +31,14 @@ const App = () => (
             <ProtectedRoute exact path="/browse/search" component={SearchContainer} />
 
             {/* collection routes: */}
-            <ProtectedRoute exact path="/collection/playlists" component={CollectionHome} />
-            <ProtectedRoute exact path="/collection/albums" component={AlbumIndex} />
-            <ProtectedRoute exact path="/collection/artists" component={ArtistIndex} />
+            <ProtectedRoute exact path="/collection/playlists" component={CollectionHome} /> 
+            <ProtectedRoute exact path="/collection/artists" component={CollectionArtist} />
+            {/* <ProtectedRoute exact path="/collection/artists" component={ArtistIndex} />
             
             {/* show: */}
             <Route path="/playlists/:playlistId" component={PlaylistShow} />
             
-            <Route path="/" component={SplashContainer} /> 
+            <SplashProtected path="/" component={SplashContainer} /> 
         </Switch>
     </>
 );

@@ -1,6 +1,19 @@
+// .artist-idx-root {
+//     padding-left: 230px;
+//     padding-bottom: 91px;
+//     background-color: black;
+//     padding-top: 10px;
+// }
+
 .artist-idx-root {
     padding-left: 230px;
     padding-bottom: 91px;
-    background-color: black;
     padding-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }

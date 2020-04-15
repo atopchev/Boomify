@@ -47,7 +47,7 @@
     float: left;
 }
 
-.boombox-text-nav {
+.boomify-text-nav {
     float: left;
     margin: 7px 0 0 5px;
     font-size: 26px;
@@ -55,7 +55,7 @@
     font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 
-.boombox-text-nav-r {
+.boomify-text-nav-r {
     font-size: 5px;
     font-weight: 100;
     float: left;
@@ -83,13 +83,13 @@
     .nav-link-tab:hover {
     color: white;
     .green-active-thing {
-        background-color: #1ed760;
+        background-color: #00d4ff;
     }
 }
 .nav-link-tab:focus {
     color:white;
     .green-active-thing {
-        background-color: #1ed760;
+        background-color: #00d4ff;
     }
 }
 
@@ -109,7 +109,7 @@
 }
 
 .green-active-thing:focus {
-    background-color: #1ed760;
+    background-color: #00d4ff;
 }
 
 .nav-link-tab-txt {

@@ -1,5 +1,7 @@
 .artist-index-item-root {
     text-align: center;
+    margin: 15px;
+    margin-bottom: 30px;
 }
 
 .artist-tile {
@@ -12,19 +14,20 @@
     opacity:0.5;
 }
 
-.transition-img {
+.transition-img-circle {
     background-color: black; 
     margin: 10px;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     box-shadow: 1px 1px 15px 0px #171b2a;
     position: absolute;
+    border-radius: 50%;
 }
 
 .a-img {
     margin: 10px;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     box-shadow: 1px 1px 15px 0px #171b2a;
     position: relative;
     opacity: 1;
@@ -38,4 +41,15 @@
     font-weight: 600;
     margin: 12px 0 4px;
 
+}
+
+.artist-name-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-left: 16px;
+    padding-top: 7px;
+    flex: 1;
+    min-width: 0;
+    font-weight: 500;
+    color: whitesmoke;
 }

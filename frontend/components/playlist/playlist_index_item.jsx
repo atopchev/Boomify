@@ -13,7 +13,6 @@ const PlaylistIndexItem = ({ playlist, imgNum }) => {
 
     return(
         <div className="playlist-index-item-root">
-
             <Link to="" className="playlist-tile"> 
                     <div className="transition-img"></div>
                     <img className="p-img" src={window.images[imageUrl]} />
