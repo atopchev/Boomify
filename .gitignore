@@ -17,3 +17,4 @@ npm-debug.log
 */log/*
 log/*
 /log/.keep
+Gemfile.lock
