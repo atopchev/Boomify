@@ -7,6 +7,7 @@ class Api::PlaylistsController < ApplicationController
 
     def show 
         @playlist = Playlist.find(params[:id])
+        render "api/playlists/show"
     end
 
     def create

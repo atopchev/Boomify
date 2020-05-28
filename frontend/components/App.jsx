@@ -36,7 +36,7 @@ const App = () => (
             {/* <ProtectedRoute exact path="/collection/artists" component={ArtistIndex} />
             
             {/* show: */}
-            <Route path="/playlists/:playlistId" component={PlaylistShow} />
+            <ProtectedRoute path="/playlists/:playlistId" component={PlaylistShow} />
             
             <SplashProtected path="/" component={SplashContainer} /> 
         </Switch>

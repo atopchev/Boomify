@@ -1,0 +1,42 @@
+.ply-name {
+    padding: 0.08em 0px;
+    font-size: 48px;
+    line-height: 48px;
+} 
+
+.show-header {
+    color: #fff;
+    margin-left: 260px;
+    display: flex;
+}
+
+.plylst {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.plylst-show {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.plylst-title {
+    margin: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    padding-bottom: 7px;
+}
+
+.sub-txt {
+    font-size: 14;
+    margin-top: 10px;
+}
+
+.sub-txt-2 {
+    opacity: 50%;
+}

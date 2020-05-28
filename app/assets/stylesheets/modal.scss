@@ -92,7 +92,7 @@
 .create-p-btn {
     color: #fff;
     text-transform: uppercase;
-    background-color: #00D4FF;
+    background-color: rgb(19, 196, 231);
     padding: 11px 44px;
     transition-duration: 50ms;
     border-radius: 500px;
@@ -101,5 +101,14 @@
     line-height: 1.6;
     letter-spacing: .16em;
     border: none;
+}
+
+.create-p-btn:hover {
+    transform: scale(1.02);
+    background-color: #00D4FF;
+}
+
+.cancel-p-btn:hover {
+    transform: scale(1.02);
 }
 

@@ -21,7 +21,8 @@
 }
 
 .new-playlist-btn {
-    background-color: #00D4FF;
+    // background-color: #00D4FF;
+    background-color: rgb(19, 196, 231);
     border: 0;
     border-radius: 500px;
     color: #fff;
@@ -35,4 +36,9 @@
     vertical-align: middle;
     width: auto;
     margin: 0 auto;
+}
+
+.new-playlist-btn:hover {
+    transform: scale(1.02);
+    background-color: #00D4FF;
 }

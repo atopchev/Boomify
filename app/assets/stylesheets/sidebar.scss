@@ -6,7 +6,7 @@
     left: 0;
     flex: 1;
     flex-direction: column;
-    height: 89.4%;
+    height: 100%;
     min-height: 0 !important;
     padding-bottom: 114px;
     padding-bottom: 5px;
@@ -53,6 +53,10 @@
     font-size: 26px;
     font-weight: 600;
     font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+
+.boomify-text-nav:visited {
+    color: white;
 }
 
 .boomify-text-nav-r {
@@ -147,8 +151,7 @@
 //auth======================
 
 .bottom-sidebar {
-    height: 15%;
-    width: 100%;
+    padding-bottom: 91px;
 }
 
 .user-name {

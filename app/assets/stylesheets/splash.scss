@@ -115,7 +115,8 @@ a.link:hover {
 .button-link {
     color: #FFF;
     height: 20px;
-    background-color:#00D4FF;
+    // background-color:#00D4FF;
+    background-color: #1ed760;
     font-size: 13px;
     font-weight: bolder;
     line-height: 1;
@@ -125,6 +126,11 @@ a.link:hover {
     transition-duration: .3s;
     display: flex;
     align-items: center;
+}
+
+.button-link:hover {
+    transform: scale(1.05); 
+    background-color: #1ed780;
 }
 
 .button-link:visited {
