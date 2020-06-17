@@ -8,6 +8,7 @@
     color: #fff;
     margin-left: 260px;
     display: flex;
+    flex-flow: wrap;
 }
 
 .plylst {
@@ -40,3 +41,9 @@
 .sub-txt-2 {
     opacity: 50%;
 }
+
+.playlist-iframe {
+    margin: 0 auto;
+    padding-top: 40px;
+}
+

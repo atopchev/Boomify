@@ -84,7 +84,10 @@ class Splash extends React.Component {
 				</div>
 		
 				<div className="footer-spl">
-					Footer
+					<a class="footer-links" href="https://www.spotify.com/us/legal/end-user-agreement/">Spotify Legal</a>
+					<a class="footer-links" href="https://www.spotify.com/us/legal/cookies-policy/">Spotify Cookies</a>
+					<div className="footer-links" align="right"> USA </div>
+					<div className="footer-links" align="right"> © 2020 Spotify AB </div>
 				</div>
 			</div>
 		);

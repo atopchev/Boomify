@@ -29,12 +29,11 @@ class PlaylistShow extends React.Component {
                             width="300" height="56" scrolling="no" frameborder="0"
                             allowtransparency="true">    
                         </iframe>
-                        <iframe src="https://open.spotify.com/embed/playlist/5pNHmrV4zckNQPnCut2UjO"
-                             width="900" height="1080" frameborder="0" allowtransparency="true" 
-                             allow="encrypted-media">
-                        </iframe>
-
                     </div>
+                    <iframe className="playlist-iframe" src="https://open.spotify.com/embed/playlist/5pNHmrV4zckNQPnCut2UjO"
+                        width="900" height="400" frameborder="0" allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
 
                 </div>
                 
