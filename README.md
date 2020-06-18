@@ -1,6 +1,6 @@
 # Boomify
 
-[Live Demo]()
+# [Live Demo](https://boomify.herokuapp.com/#/)
 
 ## Technologies
 * Backend: 
@@ -9,7 +9,8 @@
 * Frontend: 
  - React
  - Redux (state management)
-
+* Hosted on Heroku
+* AWS 
 * Spotify API
 
 ## Features
@@ -18,7 +19,7 @@
 
 ### Playlist Index Connect to Spotify API
 
-#### Create Playlist Connect to Spotify API
+### Create Playlist Connect to Spotify API
 
 ### Artist Show Page
 
