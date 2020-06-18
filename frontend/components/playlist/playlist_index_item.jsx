@@ -17,6 +17,7 @@ const PlaylistIndexItem = ({ playlist, imgNum }) => {
             <Link to={showURL} className="playlist-tile"> 
                 <div className="transition-img"></div>
                 <img className="p-img" src={window.images[imageUrl]} />
+                <p className="p-author">{playlist.name}</p>
                 {authorSubtext}
             </Link>
         </div>
