@@ -1,24 +1,27 @@
-# README
+# Boomify
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Live Demo]()
 
-Things you may want to cover:
+## Technologies
+* Backend: 
+  - Rails, ActiveRecord ORM
+  - PostgreSQL
+* Frontend: 
+ - React
+ - Redux (state management)
 
-* Ruby version
+* Spotify API
 
-* System dependencies
+## Features
+* Secure frontend to backend user authentication using BCrypt
+* TODO: Oauth with spotify? 
 
-* Configuration
+### Playlist Index Connect to Spotify API
 
-* Database creation
+#### Create Playlist Connect to Spotify API
 
-* Database initialization
+### Artist Show Page
 
-* How to run the test suite
+### Search connect to Spotify
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Continuous Play
