@@ -11,11 +11,7 @@
 
 class Artist < ApplicationRecord
 
-    has_many :songs,
-        foreign_key: :artist_id, 
-        class_name: 'Song'
-
-    has_many :albums, 
-        foreign_key: :artist_id,
-        class_name: 'Album'
+    has_many :songs
+    has_many :albums
+    has_one_attached :photo
 end
